@@ -20,12 +20,6 @@ function Write-Info { param( $String ) Write-Host $Global:InfoLine $String -Fore
 function ShowBanner {
     $banner  = @()
     $banner+= $Global:Spacing + ''
-    $banner+= $Global:Spacing + '██╗   ██╗██╗   ██╗██╗     ███╗   ██╗ █████╗ ██████╗ '
-    $banner+= $Global:Spacing + '██║   ██║██║   ██║██║     ████╗  ██║██╔══██╗██╔══██╗'
-    $banner+= $Global:Spacing + '██║   ██║██║   ██║██║     ██╔██╗ ██║███████║██║  ██║'
-    $banner+= $Global:Spacing + '╚██╗ ██╔╝██║   ██║██║     ██║╚██╗██║██╔══██║██║  ██║'
-    $banner+= $Global:Spacing + ' ╚████╔╝ ╚██████╔╝███████╗██║ ╚████║██║  ██║██████╔╝'
-    $banner+= $Global:Spacing + '  ╚═══╝   ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═════╝'
     $banner+= $Global:Spacing + ''                                                  
     $banner+= $Global:Spacing + 'By wazehell @safe_buffer'
     $banner | foreach-object {
